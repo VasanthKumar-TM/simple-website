@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="C:\Users\user\Documents\Pirple\background.css" rel="stylesheet" type="text/css">
+
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}  
+    .full{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    background: url(C:\Users\user\Documents\Pirple\back.jpg) no-repeat;
+    background-size: cover;
+}
+    .E-Book{
+    width: 280px;
+    position: absolute;
+    top: 75%;
+    left: 54%;
+    transform: translate(-70%,-70%);
+    }     
+    .checked {
+        color: orange;
+    }
+    .summary{
+        width: 280px;
+        position: absolute;
+        top: 45%;
+        left: 54%;
+        transform: translate(-70%,-70%);
+    }
+    .img{
+        width: 280px;
+        position: absolute;
+        top: 60%;
+        left: 14%;
+        transform: translate(-70%,-70%);
+    }
+    .Ratings{
+        width: 280px;
+        position: absolute;
+        top: 87%;
+        left: 54%;
+        transform: translate(-70%,-70%);
+    }
+    
+    </style>
+
+<style>
+         .flip-card {
+      background-color: transparent;
+      width: 200px;
+      height: 400px;
+      perspective: 1000px;
+      position: absolute;
+      top: 60%;
+    left: 80%;
+    transform: translate(-70%,-70%);
+    }
+
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+    
+    .flip-card-back {
+      
+      transform: rotateY(180deg);
+    }
+</style>
+<!--<style> tag - used to define style information for an HTML document-->
+</head>
+<body>
+    
+    <h2>My favourite Book</h2>
+    <h1><i>WINGS OF FIRE</i></h1>
+    <!--<i> tag - usually displayed in italic-->
+    <div class="summary">    
+    <details>
+    <summary>''WINGS OF FIRE'': Autobiography of A P J Kalam, India's ''Missile Man'' President</summary>
+    <p>A.P.J. Abdul Kalam, in full Avul Pakir Jainulabdeen Abdul Kalam, (born October 15, 1931, Rameswaram, India—died July 27, 2015, Shillong), Indian scientist and politician who played a leading role in the development of India's missile and nuclear weapons programs. He was president of India from 2002 to 2007.</p>
+    </details>
+    <!--<details> tag - specifies additional details that the user can view or hide on demand-->
+    <!--<summary> tag - defines a visible heading for the <details> element-->
+    <h3>Ratings for this Book</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    </div>    
+    <div class="E-Book">
+        <p><h5>
+        <ul>
+            <li>To Download the E-Book</li>
+        </ul>
+        </h5></p>
+        <iframe src="https://www.academia.edu/14463803/WINGS_OF_FIRE_Autobiography_of_A_P_J_Kalam_Indias_Missile_Man_President">
+           <p>Your browser does not support iframes.</p>
+        </iframe>
+    <!-- <iframe> tag - used to embed another document within the current HTML document -->
+    </div>
+       
+    <div class="flip-card">
+        <p>>>>Touch the Image</p>
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bookimg.jpg" alt="Abdul Kalam" style="width:200px;height:400px;">
+            
+          </div>
+          <div class="flip-card-back">
+            <img src="APJ-2008.jpg" alt="Abdul Kalam" style="width:200px;height:400px;">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Ratings">
+        <label for="Book">How is this:</label>
+
+        <select id="Book">
+          <option value="Bad">Bad</option>
+          <option value="Good">Good</option>
+          <option value="Nice">Nice</option>
+          <option value="Extrodinary">Extrodinary</option>
+        </select>
+        <button type="button" onclick="alert('Hello world!')">SUBMIT</button>
+      </div>
+
+      <div class="img">
+        <img src="quote.png" alt="Quote" width="500" height="300"/>
+      </div>
+</body>
+</html>
